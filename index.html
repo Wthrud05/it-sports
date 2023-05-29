@@ -9,7 +9,35 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <header class="header"> <!-- Указываем семантический тэг header -->
+      <nav class="header_menu"> <!-- Указываем семантический тэг nav -->
+        <ul class="header_list"> <!-- Здесь указываем тэг ul, который предстваляет собой ненумерованный список -->
+          <li class="header_item">
+            <a href="/">
+              <picture>
+                <source srcset="./src/logo.png" type="image/png" />
+                <!-- Так как внутри тэга picture присутсвует картинка, то указываем для атрибута type тип image/png -->
+                <img src="./src/logo.png" alt="logo">
+              </picture>
+            </a>
+          </li>
+          <li class="header_item">
+            <a href="/football">Футбол</a>
+          </li>
+          <li class="header_item">
+            <a href="/basketball">Баскетбол</a>
+          </li>
+          <li class="header_item">
+            <a href="/voleyball">Волейбол</a>
+          </li>
+          <li class="header_item">
+            <a href="/hockey">Хоккей</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
